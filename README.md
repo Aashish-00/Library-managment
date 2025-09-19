@@ -1,36 +1,42 @@
-Library Management System
-A simple Java-based Library Management System that allows users to manage book borrowings and returns through a console interface. The system reads from and writes to a CSV file for persistent data storage.
+📚 Library Management System (Java Console Application)
+🔹 Overview
 
-Features
-View Available Books: Display all books in the library with their current availability status
+The Library Management System is a console-based Java application that simulates a basic library system.
+Users can add books, view all books, search, issue, and return books, all through a simple text-based menu.
 
-Borrow Books: Check out books by entering their book ID
+This project is built to practice core Java concepts, object-oriented programming (OOP), and collections.
 
-Return Books: Return borrowed books by entering their book ID
+🔹 Features
 
-Persistent Data Storage: All changes are saved to a CSV file for data persistence between sessions
+Add Books – Add new books with ID, Name, and Author.
 
-**Usage**
+View Books – Display all books with their details and current status (Available/Issued).
 
-Run the application
+Search Books – Find a book by its ID and view its details.
 
-Use the menu to:
+Issue Books – Mark a book as issued if it is available.
 
-View all books (option 1)
+Return Books – Mark a book as returned.
 
-Borrow a book by entering its ID (option 2)
+Menu-Driven Interface – Easy navigation through a console menu.
 
-Return a book by entering its ID (option 3)
+🔹 Technologies Used
 
-Exit the application (option 4)
+Java 8+
 
-Data Format
-The system uses a CSV file with the following columns:
+ArrayList for dynamic storage of books
 
-book_id: Unique identifier for each book
+Scanner for user input
 
-title: Title of the book
+Object-Oriented Programming (OOP) concepts: Classes, Objects, Methods, Encapsulation
 
-author: Author of the book
+🔹 How It Works
 
-available: Availability status ("yes" or "no")
+The program displays a menu with options:
+Add Books, View Books, Search Books, Issue Books, Return Books, Exit.
+
+The user selects an option and performs the corresponding action.
+
+The book data is stored in an ArrayList in memory.
+
+Each book has a status flag (Issued or Available) to track its availability.
